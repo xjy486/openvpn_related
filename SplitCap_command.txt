@@ -1,0 +1,2 @@
+SplitCap.exe -r vpn_email2b.pcap -o output_folder -s flows
+SplitCap.exe -r capture.pcap -o output_folder -s flows
