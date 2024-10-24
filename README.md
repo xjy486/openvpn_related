@@ -9,7 +9,7 @@ scapy 在 linux 和 windows 上的用法有点区别，
 在 linux 下访问一个数据包的 payload：`bytes(packet[TCP].payload)`
 在 windows 下访问一个数据包的 payload:`pkt[Raw].load.hex()`
 
-`ack_fp_realtime.py`有一点不足，就是它不能处理 IPV6 的流量，需要继续改进。
+`ack_fp_realtime.py`有一点不足，不能处理 IPV6 的流量，需要继续改进。
 
 ```
 # 找到含有openvpn流量的pcap文件，并输出文件名
