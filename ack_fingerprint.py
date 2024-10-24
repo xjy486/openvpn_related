@@ -74,7 +74,7 @@ def detect_openvpn_sessions(pcap_files):
             if not dynamic_ack_threshold(bins_number+1,bins_count):
                 suspicious_bool=False
                 break
-        if suspicious_bool:
+        if suspicious_bool and bins:
             suspicious_flows.append(pcap_file)
 
     return suspicious_flows
